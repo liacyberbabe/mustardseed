@@ -1,16 +1,16 @@
 const products = [
   {name:"Heavyweight Box Tee", category:"heavyweight", meta:"260 GSM · 100% Cotton", price:"Wholesale", image:"PRODUCT IMAGE 01"},
-  {name:"Premium Everyday Tee", category:"tees", meta:"220 GSM · 100% Cotton", price:"Wholesale", image:"IMG_7029.jpg"},
+  {name:"Premium Everyday Tee", category:"tees", meta:"220 GSM · 100% Cotton", price:"Wholesale", image:"images/IMG_7025.jpg"},
   {name:"Classic Fleece Hoodie", category:"fleece", meta:"450 GSM · Cotton Blend", price:"Wholesale", image:"PRODUCT IMAGE 03"},
   {name:"Heavyweight Crew", category:"heavyweight", meta:"420 GSM · Cotton Blend", price:"Wholesale", image:"PRODUCT IMAGE 04"},
   {name:"Essential Long Sleeve", category:"tees", meta:"240 GSM · 100% Cotton", price:"Wholesale", image:"PRODUCT IMAGE 05"},
-  {name:"Relaxed Sweatpant", category:"bottoms", meta:"430 GSM · Cotton Blend", price:"Wholesale", image:"IMG_7030.jpg"}
+  {name:"Relaxed Sweatpant", category:"bottoms", meta:"430 GSM · Cotton Blend", price:"Wholesale", image:"images/IMG_7028.jpg"}
 ];
 
 function productCard(p){
-  return `<article class="product-card" data-category="${p.category}">
+  return `<article class="product-card" data-category="bottoms">
     <a href="contact.html">
-      <div class="product-image"><img src="${p.image}" alt="${p.name}"></div>
+      <div class="product-image"><img src="images/IMG_7028.jpeg" alt="Relaxed Pleated Sweatpants"></div>
       <div class="product-info"><div><div class="product-name">${p.name}</div><div class="product-meta">${p.meta}</div></div><div class="product-price">${p.price}</div></div>
     </a>
   </article>`;
